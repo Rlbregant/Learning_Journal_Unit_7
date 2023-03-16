@@ -1,8 +1,8 @@
 def invert_dict_with_lists(d):
     inverse = dict()
     for key in d:
-        val_list = d[key]
-        for val in val_list:
+        val = d[key]
+        for val in val:
             if val not in inverse:
                 inverse[val] = [key]
             else:
@@ -32,7 +32,9 @@ if __name__ == "__main__":
 # Output: Original gear sets: {'dungeon_set': ['Helm of the Mountain', 'Soulforge Breastplate', 'Bloodforged
 # Legplates'], 'raid_set': ['Helmet of Ten Storms', 'Breastplate of Wrath', 'Legplates of Wrath', 'Gauntlets of
 # Wrath', 'Sabatons of Wrath'], 'pvp_set': ['Grand Marshal's Lamellar Helm', 'Grand Marshal's Lamellar Breastplate',
-# 'Grand Marshal's Lamellar Legplates']} Inverted gear sets: {'Helm of the Mountain': ['dungeon_set'], 'Soulforge
+# 'Grand Marshal's Lamellar Legplates']}
+
+#Inverted gear sets: {'Helm of the Mountain': ['dungeon_set'], 'Soulforge
 # Breastplate': ['dungeon_set'], 'Bloodforged Legplates': ['dungeon_set'], 'Helmet of Ten Storms': ['raid_set'],
 # 'Breastplate of Wrath': ['raid_set'], 'Legplates of Wrath': ['raid_set'], 'Gauntlets of Wrath': ['raid_set'],
 # 'Sabatons of Wrath': ['raid_set'], "Grand Marshal's Lamellar Helm": ['pvp_set'], "Grand Marshal's Lamellar
